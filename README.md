@@ -14,8 +14,6 @@ MATLAB implementation of the **PCRD-UH** tone-mapping pipeline (Uniform compensa
 | `ng_estimate_sigma.m` | Proxy model: output standard deviation of the hybrid PDF, by direct summation over histogram bins. |
 | `ng_steffensen.m` | Segmentation solver: solves σY = g(σY) with Steffensen acceleration; returns boundaries v1, v2. |
 | `ng_fusion.m` | Fusion (Stage 4): hard-clips the compensated detail by min(Bp, Bn) and adds it to the base layer. |
-| `color_restore.m` | Auxiliary color restoration (γc = 1/2.2). |
-| `demo.m` | Minimal example: HDR input → PCRD-UH pipeline → LDR output. |
 
 > In the code, the variable `lambda` is the mixture weight ω of the paper.
 
